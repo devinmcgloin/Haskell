@@ -17,7 +17,7 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 executable haskell_Experiments
-  main-is:             realworldhaskell/ch03/assign.hs
+  main-is:             main.hs
   -- other-modules:
   -- other-extensions:
   build-depends:       base >=4.7 && <4.8
