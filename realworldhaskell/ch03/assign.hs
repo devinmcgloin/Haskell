@@ -1,6 +1,10 @@
 -- You want a main, fine
 main :: IO ()
-main =  putStr "hello world"
+main =  do
+  putStrLn "Initializing"
+  putStrLn $ palindrome2 "racecar"
+  putStrLn $ palindrome2 "isPalindrome"
+  print $ palindromeTest ( palindrome2 "racecar" )
 
 
 
@@ -52,7 +56,7 @@ intersperse sep (x:xs) = x ++ [sep] ++ intersperse sep xs
 
 --Someone elses answer
 intersperse1 :: a -> [[a]] -> [a]
-intersperse1 _ [] = []
+intersperse1 _ []    = []
 intersperse1 _ (x:[]) = x
 intersperse1 sep (x:xs) = x ++ [sep] ++ intersperse1 sep xs
 
