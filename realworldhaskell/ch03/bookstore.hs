@@ -11,20 +11,20 @@ myInfo = Book 9780135072455 "Algebra of Programming"
 
 data BookReview = BookReview BookInfo CustomerID String
 
--- Better way to go about defining review. 
+-- Better way to go about defining review.
 type CustomerID = Int
 type ReviewBody = String
 
 data BetterReview = BetterReview BookInfo CustomerID ReviewBody
 
-{-- Can also create more indepth record, this is combo of two 
+{-- Can also create more indepth record, this is combo of two
 to pass around a more complete type. --}
 type BookRecord = (BookInfo, BookReview)
 
 --Algabraic constructors
 data Bool = False | True
 
--- here is a way we might represent billing info using algabraic types 
+-- here is a way we might represent billing info using algabraic types
 type CardHolder = String
 type CardNumber = String
 type Address = [String]
@@ -42,7 +42,7 @@ data Customer = Customer {
     } deriving (Show)
 
 
---Simple constructor utilizing the above 
+--Simple constructor utilizing the above
 customer1 = Customer 271828 "J.R. Hacker" ["255 Syntax Ct","Milpitas, CA 95134","USA"]
 
 --Constructor that uses record syntax in which order does not matter.
