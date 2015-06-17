@@ -1,4 +1,5 @@
 main = do
+    print $ "Initialized"
     line <- getLine
     if null line
         then return ()
