@@ -7,7 +7,7 @@
 *.o
 *.so
 *.hi
-
+dist
 
 # Packages #
 ############
